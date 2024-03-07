@@ -1,13 +1,11 @@
 import React from "react"
+import { useRoutes } from "react-router-dom"
+import {routeList} from "./Route/routes"
 
 
 const App =  () => {
+  const element = useRoutes(routeList);
 
-
-  return (
-    <h1>
-      Hello World
-    </h1>
-  )
+  return element;
 }
 export default App

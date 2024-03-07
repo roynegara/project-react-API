@@ -1,0 +1,94 @@
+.login-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://img.freepik.com/free-photo/mysterious-tropical-rainforest-glows-with-lush-greenery-generated-by-ai_188544-15026.jpg?t=st=1709781167~exp=1709784767~hmac=1bfb78db383aaf7ec12a7d137c9e63d62bbc849d979491af650badb136e5a70a&w=1380")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login {  
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  color: #ededed;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.login h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.input-box-login {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box-login input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  font-size: 15px;
+  color: #ededed;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box-login input::placeholder {
+  color: #b4b4b4;
+}
+
+.input-box-login i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.btn-login {
+  display: contents;
+  text-align: center;
+}
+.btn-login button {
+  width: 100%;
+  height: 45px;
+  background: #ededed;
+  color: #333;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 9px;
+}
+
+.btn-login button:hover {
+  background: #e0e0e0;
+  color: #414141;
+}
+
+.btn-login p {
+    color: #ededed;
+
+}
+
+.btn-login a {
+  color: #ededed;
+  /* text-decoration: none; */
+  font-weight: 400;
+}
+
+.btn-login p a:hover {
+  color: #b3b3b3;
+}
