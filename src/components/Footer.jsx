@@ -10,8 +10,8 @@ const Footer = () => {
         </div>
         <div className="footer-center">
           <p>Opening Hours:</p>
-          <p>Monday-Friday: 8:00 AM - 5:00PM</p>
-          <p>Saturday-Sunday: Closed</p>
+          <p>Monday - Friday: 8:00AM - 5:00PM</p>
+          <p>Saturday - Sunday: Closed</p>
         </div>
         <div className="footer-right">
           <form>
