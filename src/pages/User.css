@@ -9,3 +9,46 @@
   background-position: center;
   padding: 20px 10%;
 }
+
+.user h1 {
+  margin-top: 77px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-card {
+  margin-top: 77px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-card h1 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.user-card img {
+  width: 300px;
+  border-radius: 9px;
+}
+
+.avatar-user{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-detail {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-pagination {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

@@ -68,7 +68,7 @@ const User = () => {
     <Layout>
       {" "}
       <div className="user">
-        <h1>User</h1>
+        <h1>The Member User of This Website</h1>
         <div>
           {users.map((item, index) => (
             <div key={index}>
@@ -76,17 +76,17 @@ const User = () => {
                 <h1>
                   {item.first_name} {item.last_name}
                 </h1>
-                <img src={item.avatar} />
+                <img className="avatar-user" src={item.avatar} />
               </div>
 
-              <div>
+              <div className="btn-detail">
                 <Link to={`/user/${item.id}`}>
                   <button>Detail</button>
                 </Link>
               </div>
             </div>
           ))}
-          <div>
+          <div className="btn-pagination">
             <button onClick={handleBack} disabled={pagination.page === 1}>Back</button>
             <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>Next</button>
           </div>

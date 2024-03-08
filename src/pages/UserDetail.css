@@ -1,0 +1,62 @@
+.user-detail {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: url("https://img.freepik.com/free-photo/beautiful-trees-lake-rubber-plantation-kerala-india_181624-19474.jpg?t=st=1709903072~exp=1709906672~hmac=2c0228282c652b8ce92cfbee37b337b703a703ef8f95b9390f4bab0dd7f8b3ba&w=1380")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 10%;
+}
+
+.user-detail-title {
+  margin-top: 100px;
+  font-size: 21px;
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  color: #ededed;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-detail-card {
+  margin-top: 80px;
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  color: #ededed;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-detail-card h1 {
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+.user-detail-card h2 {
+  margin-top: 2px;
+  font-size: 17px;
+}
+
+.user-detail-card img {
+  width: 100%;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.avatar-user-detail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

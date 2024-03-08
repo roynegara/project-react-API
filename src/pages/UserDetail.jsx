@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Layout from "../components/Layout";
+import "./UserDetail.css";
 
 const UserDetail = () => {
   const [user, setUser] = useState([]);
@@ -27,13 +28,16 @@ const UserDetail = () => {
 
   return (
     <Layout>
-      <div>
-        <h1>User Detail</h1>
-        <div>
-          <h1>{user?.first_name}</h1>
-          <h1>{user?.last_name}</h1>
-          <h2>{user?.email}</h2>
-          <img alt={user?.first_name} src={user?.avatar} />
+      <div className="user-detail">
+        <h1 className="user-detail-title">Detail of The User This Website </h1>
+        <div className="user-detail-content" >
+          <div className="user-detail-card">
+            <h1>First Name : {user?.first_name}</h1>
+            <h1>Last Name : {user?.last_name}</h1>
+            <h2>Email Address : {user?.email}</h2>
+            <img className="avatar-user-detail" alt={user?.first_name} src={user?.avatar} />
+          </div>
+
           <div>
             <button>
               <Link to="/user">Back</Link>
