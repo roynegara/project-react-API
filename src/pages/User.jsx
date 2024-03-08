@@ -33,9 +33,34 @@ const User = () => {
       });
   };
 
+  const handleBack = () => {
+    setPagination({
+      ...pagination,
+      page: pagination.page - 1,
+    });
+  };
+
+  const handleNext = () => {
+    setPagination({
+      ...pagination,
+      page: pagination.page + 1,
+    });
+  };
+
+  const handlePage = (page) => {
+    setPagination({
+      ...pagination,
+      page: page,
+    });
+  };
+
   useEffect(() => {
     getUsersData();
   }, []);
+
+  useEffect(() => {
+    getUsersData();
+  }, [pagination.page]);
 
   return (
     <Layout>
@@ -60,8 +85,8 @@ const User = () => {
             </div>
           ))}
           <div>
-            <button>Back</button>
-            <button>Next</button>
+            <button onClick={handleBack} disabled={pagination.page === 1}>Back</button>
+            <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>Next</button>
           </div>
         </div>
       </div>

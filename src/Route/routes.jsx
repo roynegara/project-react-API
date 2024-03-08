@@ -12,19 +12,22 @@ export const routeList = [
   },
   {
     path: "/user",
-    element : <User />,
-    // element: (
-    //   <ProtectedRoute>
-    //     <User />
-    //   </ProtectedRoute>
-    // ),
-  }, {
-    path: "/user/:id",
-    element: <UserDetail />,
+    element: (
+      <ProtectedRoute>
+        <User />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/user/:id",    
+    element: (
+      <ProtectedRoute>
+        <UserDetail />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/user/id/edit",
-    
   },
   {
     path: "/login",

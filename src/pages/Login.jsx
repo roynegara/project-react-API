@@ -9,9 +9,9 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [notif, setNotif] = useState("");
-  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-
+  
+  const navigate = useNavigate();
   const handleEmailChange = (e) => {
     console.log(e.target.value);
     setEmail(e.target.value);
@@ -40,7 +40,6 @@ const Login = () => {
         const token = res?.data?.token;
         localStorage.setItem("access_token", token);
         setLoading(false);
-
         if (token) {
           setTimeout(() => {
             navigate("/user");
@@ -48,9 +47,9 @@ const Login = () => {
         }
       })
       .catch((err) => {
-        console.log(err.response);
-        alert("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
+        // alert("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
         setLoading(false);
+        console.log(err.response);
         setNotif("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
 
         // navigate("/login");
@@ -86,7 +85,7 @@ const Login = () => {
             <button
               type="submit"
               onClick={handleLogin}
-              disabled={email === "" || password === "" || loading ? true : false}>
+              disabled={ loading ? true : false}>
               {loading ? "Loading..." : "Login"}
             </button>
 
