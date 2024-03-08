@@ -4,13 +4,13 @@ import "./Home.css";
 const Home = () => {
   return (
     <Layout>
-      
-          <div className="home">
-              <h1>Selamat datang di halaman Home</h1>
-              <p>Ini adalah halaman Home</p>
-              <p>Halaman ini akan ditampilkan ketika user mengakses halaman Home</p>
-              <p>Silakan Login terlebih dahulu jika mau mengakses user</p>
-              
+      <div className="home">
+        <h1>Selamat datang di halaman Home</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
       </div>
     </Layout>
   );

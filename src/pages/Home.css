@@ -1,4 +1,14 @@
 .home {
-  text-align: center;
-  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://img.freepik.com/free-photo/mysterious-fog-blankets-tranquil-tropical-rainforest-revealing-nature-enchanting-beauty-generated-by-artificial-intellingence_25030-62401.jpg?t=st=1709860467~exp=1709864067~hmac=b6081c4429665b1b1d5de35b131a95aa40b5c42167accbf0305bbe55b72f0755&w=1380")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 10%;
+
 }
+
+
