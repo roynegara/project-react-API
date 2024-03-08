@@ -1,0 +1,80 @@
+/* Gaya-gaya umum di luar media query */
+
+/* Ketika lebar layar <= 600px */
+@media only screen and (max-width: 600px) {
+    /* Gaya-gaya yang akan berlaku hanya ketika lebar layar kurang dari atau sama dengan 600px */
+  
+    /* Penyesuaian umum */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Penyesuaian untuk navigasi */
+    nav {
+      flex-direction: column;
+    }
+  
+    /* Penyesuaian untuk gambar */
+    .gambar {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Ketika lebar layar > 600px dan <= 900px */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Gaya-gaya yang akan berlaku hanya ketika lebar layar antara 601px dan 900px */
+  
+    /* Penyesuaian umum */
+    body {
+      font-size: 16px;
+    }
+  
+    /* Penyesuaian untuk navigasi */
+    nav {
+      flex-direction: row;
+    }
+  
+    /* Penyesuaian untuk gambar */
+    .gambar {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+  
+  /* Ketika lebar layar > 900px */
+  @media only screen and (min-width: 901px) {
+    /* Gaya-gaya yang akan berlaku hanya ketika lebar layar lebih besar dari 900px */
+  
+    /* Penyesuaian umum */
+    body {
+      font-size: 18px;
+    }
+  
+    /* Penyesuaian untuk navigasi */
+    nav {
+      flex-direction: row;
+    }
+  
+    /* Penyesuaian untuk gambar */
+    .gambar {
+      max-width: 60%;
+      height: auto;
+    }
+  }
+  
+  /* Ketika layar adalah perangkat handheld dengan orientasi landscape */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+    /* Gaya-gaya yang akan berlaku hanya ketika layar adalah perangkat handheld dengan orientasi landscape */
+  
+    /* Penyesuaian umum */
+    body {
+      background-color: lightblue;
+    }
+  
+    /* Penyesuaian untuk navigasi */
+    nav {
+      font-size: 14px;
+    }
+  }
+  

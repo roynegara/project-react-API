@@ -4,6 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <Layout>
+      
           <div className="home">
               <h1>Selamat datang di halaman Home</h1>
               <p>Ini adalah halaman Home</p>
