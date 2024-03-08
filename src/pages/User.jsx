@@ -45,8 +45,12 @@ const User = () => {
         <div>
           {users.map((item, index) => (
             <div key={index}>
-                  <h1>{item.first_name} {item.last_name}</h1>
-                  <img src={item.avatar} />
+              <div className="user-card">
+                <h1>
+                  {item.first_name} {item.last_name}
+                </h1>
+                <img src={item.avatar} />
+              </div>
 
               <div>
                 <Link to={`/user/${item.id}`}>

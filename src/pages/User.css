@@ -1,11 +1,11 @@
 .user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url("https://img.freepik.com/free-photo/sunny-tropical-landscape_23-2150466874.jpg?t=st=1709868528~exp=1709872128~hmac=7d877674fb0e0d558b402bd20b539efdbadbc9909331d424b0f5574693272d75&w=1380")
-      no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 20px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://img.freepik.com/free-photo/beautiful-trees-lake-rubber-plantation-kerala-india_181624-19474.jpg?t=st=1709869772~exp=1709873372~hmac=84f31b0c296eced071c4b62a3dfcb1da2c01d44d0cbf7a43277e70b0dbf47f25&w=1380")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 10%;
 }

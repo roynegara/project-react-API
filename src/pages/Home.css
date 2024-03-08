@@ -1,5 +1,5 @@
 .home {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -8,7 +8,8 @@
   background-size: cover;
   background-position: center;
   padding: 20px 10%;
-
 }
 
-
+.user-card {
+  display: contents;
+}
