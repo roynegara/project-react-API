@@ -53,18 +53,27 @@ button {
 @media screen and (max-width: 768px) {
   .navbar-nav {
     display: none;
+    
     flex-direction: column;
     position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #081b29;
-    padding: 10px;
+    top: 60px;
+    left: 22%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    /* width: 85%; */
+    width: 420px;
+    /* background: #081b29; */
+    /* background: transparent; */
+    /* padding: 10px; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+  padding: 5px;
   }
 
   .navbar-nav.active {
     display: flex;
+    /* margin-bottom: 100px; */
   }
 
   .navbar-nav a {
@@ -78,4 +87,8 @@ button {
     font-size: 24px;
     color: #ededed;
   }
+}
+
+.navbar-nav a:hover {
+  color: #b3b3b3;
 }
