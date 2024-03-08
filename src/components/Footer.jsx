@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-left">
           <img src="https://avatars.githubusercontent.com/u/84184940?v=4" alt="Project RBN Logo" />
-          <p>Project RBN. Company Pte. Ltd</p>
+          {/* <p>Project RBN. Company Pte. Ltd</p> */}
         </div>
         <div className="footer-center">
           <p>Opening Hours:</p>
@@ -18,10 +18,11 @@ const Footer = () => {
           <form>
             <input type="text" placeholder="Nama" />
             <input type="email" placeholder="Email" />
-            <button type="submit">Kirim</button>
+            <button type="submit">Send</button>
           </form>
           <div className="social-icons">
-            <a href="#">
+           <p>Follow us: </p>
+                      <a href="#">
               <i className="bx bxl-instagram"></i>
             </a>
             <a href="#">
@@ -34,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>|| &copy; 2024 || Project RBN. Company Pte. Ltd. || All Rights Reserved ||</p>
+        <p>&copy; 2024 | Project RBN. All Rights Reserved</p>
       </div>
     </footer>
   );
