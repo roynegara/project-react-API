@@ -16,19 +16,27 @@ const Home = () => {
   return (
     <Layout>
       <div className="home">
-        {token ? (
-          <button onClick={handleLogout}>Logout</button>
-        ) : (
-          <button>
-            <Link to="/login">Login</Link>
+        <h1 className="home-title">Welcome to Project RBN. Website</h1>
+        <div className="home-content">
+          <p className="home-description-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div  className="home-description-2">  <p>If you interesting join please Register here</p>
+          <button className="home-btn">
+            <Link to="/register">Register</Link>
           </button>
-        )}
-        <h1>Selamat datang di halaman Home</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+          <p>and if you already registered just login here</p>
+          {token ? (
+            <button className="home-btn" onClick={handleLogout}>Logout</button>
+          ) : (
+            <button className="home-btn">
+              <Link to="/login">Login</Link>
+            </button>
+          )}</div>
+        
+        </div>
       </div>
     </Layout>
   );

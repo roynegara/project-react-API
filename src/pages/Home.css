@@ -1,5 +1,5 @@
 .home {
-  display: flex;
+  display: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -10,6 +10,63 @@
   padding: 20px 10%;
 }
 
-.user-card {
-  display: contents;
+.home-title {
+  margin-top: 100px;
+  font-size: 21px;
+  width: 1000px;
+  background: transparent;
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  color: #ededed;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 21px;
+  text-shadow: 4 4 10px rgba(0, 0, 0, 0, 0.6);
+}
+
+.home-content {
+  margin-top: 100px;
+  padding: 30px 40px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-description-1 {
+  padding: 10px;
+  text-align: center;
+}
+
+.home-description-2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.home-btn, .home-btn a {
+  text-decoration: none;
+  color: #333;
+  background: #ededed;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  margin: 10px;
+  width: 110px;
+  height: 50px;
+}
+
+.home-btn:hover, .home-btn a:hover {
+  background: #d4d4d4;
+  color: #252525;
+  cursor: pointer;
+  
 }
