@@ -61,14 +61,14 @@ const User = () => {
   useEffect(() => {
     getUsersData();
   }, [pagination.page]);
-    
-    console.log("data", pagination)
+
+  console.log("data", pagination);
 
   return (
     <Layout>
       {" "}
       <div className="user">
-        <h1 >The Member User of This Website</h1>
+        <h1>The Member User of This Website</h1>
         <div>
           {users.map((item, index) => (
             <div key={index}>
@@ -87,8 +87,14 @@ const User = () => {
             </div>
           ))}
           <div className="btn-pagination">
-            <button onClick={handleBack} disabled={pagination.page === 1}>Back</button>
-            <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>Next</button>
+            <button onClick={handleBack} disabled={pagination.page === 1}>
+              Back
+            </button>
+            <button onClick={handlePage}> {pagination.page}</button>
+
+            <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>
+              Next
+            </button>
           </div>
         </div>
       </div>

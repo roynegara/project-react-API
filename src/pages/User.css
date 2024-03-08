@@ -12,7 +12,7 @@
 
 .user h1 {
   margin-top: 77px;
-  font-size: 20px;
+  font-size: 24px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -27,7 +27,7 @@
 
 .user-card h1 {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .user-card img {
@@ -35,8 +35,8 @@
   border-radius: 9px;
 }
 
-.avatar-user{
-    display: block;
+.avatar-user {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,8 +47,36 @@
   text-align: center;
 }
 
+.btn-detail button {
+  text-decoration: none;
+  color: #333;
+  background: #ededed;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px;
+  margin: 10px;
+  width: 300px;
+  height: 40px;
+}
+
 .btn-pagination {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.btn-pagination button {
+  text-decoration: none;
+  color: #333;
+  background: #ededed;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
 }
