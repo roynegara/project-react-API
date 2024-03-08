@@ -61,6 +61,8 @@ const User = () => {
   useEffect(() => {
     getUsersData();
   }, [pagination.page]);
+    
+    console.log("data", pagination)
 
   return (
     <Layout>
