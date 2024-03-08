@@ -7,16 +7,20 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    console.log(isOpen);
   };
 
   return (
     <nav className="navbar">
+
       <div className="logo">
         <Link to="/">Project RBN.</Link>
       </div>
 
       <div className={`navbar-nav ${isOpen ? "active" : ""}`}>
-        <Link active to="/">Home</Link>
+        <Link active to="/">
+          Home
+        </Link>
         <Link to="/user">User</Link>
         <Link to="/login">Login</Link>
         <Link to="/register">Register</Link>
