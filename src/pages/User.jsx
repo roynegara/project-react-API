@@ -90,7 +90,7 @@ const User = () => {
             <button onClick={handleBack} disabled={pagination.page === 1}>
               Back
             </button>
-            <button onClick={handlePage}> {pagination.page}</button>
+            <button > {pagination.page}</button>
 
             <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>
               Next

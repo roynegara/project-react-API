@@ -30,7 +30,7 @@ const UserDetail = () => {
     <Layout>
       <div className="user-detail">
         <h1 className="user-detail-title">Detail of The User This Website </h1>
-        <div className="user-detail-content" >
+        <div className="user-detail-content">
           <div className="user-detail-card">
             <h1>First Name : {user?.first_name}</h1>
             <h1>Last Name : {user?.last_name}</h1>
@@ -38,13 +38,15 @@ const UserDetail = () => {
             <img className="avatar-user-detail" alt={user?.first_name} src={user?.avatar} />
           </div>
 
-          <div>
-            <button>
-              <Link to="/user">Back</Link>
+          <div className="btn-user-detail">
+            <button className="btn-user-detail-link">
+           
+                <Link to="/user">Back</Link>
+             
             </button>
-            <button>
+            {/* <button>
               <Link to={`/user/${id}/edit`}>Edit</Link>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
