@@ -9,9 +9,9 @@ const Footer = () => {
           <p>Project RBN. Company Pte. Ltd</p>
         </div>
         <div className="footer-center">
-          <p>Jam Operasional:</p>
-          <p>Senin-Jumat: 08:00 - 17:00</p>
-          <p>Sabtu-Minggu: Tutup</p>
+          <p>Opening Hours:</p>
+          <p>Monday-Friday: 8:00 AM - 5:00PM</p>
+          <p>Saturday-Sunday: Closed</p>
         </div>
         <div className="footer-right">
           <form>
