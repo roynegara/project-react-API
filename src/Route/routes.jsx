@@ -23,6 +23,10 @@ export const routeList = [
     element: <UserDetail />,
   },
   {
+    path: "/user/id/edit",
+    
+  },
+  {
     path: "/login",
     element: <Login />,
   },

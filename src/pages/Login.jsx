@@ -1,23 +1,95 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 import "./Login.css";
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [notif, setNotif] = useState("");
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+
+  const handleEmailChange = (e) => {
+    console.log(e.target.value);
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    console.log(e.target.value);
+  };
+
+  const handleLogin = () => {
+    const payload = {
+      email: email,
+      password: password,
+    };
+
+    // Jika eror
+
+    setLoading(true);
+
+    axios
+      .post("https://reqres.in/api/login", payload)
+      .then((res) => {
+        console.log(res);
+        setNotif("Status : " + res?.status + " >> Login Successfully, Please Wait...");
+        const token = res?.data?.token;
+        localStorage.setItem("access_token", token);
+        setLoading(false);
+
+        if (token) {
+          setTimeout(() => {
+            navigate("/user");
+          }, 1000);
+        }
+      })
+      .catch((err) => {
+        console.log(err.response);
+        alert("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
+        setLoading(false);
+        setNotif("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
+
+        // navigate("/login");
+      });
+  };
+
   return (
     <Layout>
       <div className="login-wrap">
         <div className="login">
           <h1>Login</h1>
+
+          {notif && <div className="notif">{notif}</div>}
+
           <div className="input-box-login">
-            <input type="email" id="email" placeholder="Email" />
+            <input type="email" id="email" placeholder="Email" value={email} onChange={handleEmailChange} required />
             <i className="bx bx-envelope"></i>
           </div>
+
           <div className="input-box-login">
-            <input type="password" id="password" placeholder="Password" />
-            <i className='bx bxs-lock-open'></i>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              value={password}
+              onChange={handlePasswordChange}
+              required
+            />
+            <i className="bx bxs-lock-open"></i>
           </div>
+
           <div className="btn-login">
-            <button>Login</button>
+            <button
+              type="submit"
+              onClick={handleLogin}
+              disabled={email === "" || password === "" || loading ? true : false}>
+              {loading ? "Loading..." : "Login"}
+            </button>
+
             <div>
               <p>
                 Not have an account? <Link to={"/register"}>Register</Link>
