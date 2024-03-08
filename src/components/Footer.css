@@ -1,10 +1,23 @@
+footer {
+  backdrop-filter: blur(20px);
+  background: url("https://img.freepik.com/free-photo/beautiful-trees-lake-rubber-plantation-kerala-india_181624-19474.jpg?t=st=1709903072~exp=1709906672~hmac=2c0228282c652b8ce92cfbee37b337b703a703ef8f95b9390f4bab0dd7f8b3ba&w=1380");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+ 
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: transparent;
-
   padding: 20px 10%;
+  
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer img {
