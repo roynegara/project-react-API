@@ -28,6 +28,8 @@
 .footer-center {
   margin-bottom: 5px;
   margin-top: 25px;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-right {
@@ -79,6 +81,7 @@
   margin-top: 20px;
   text-align: center;
   text-align: center;
+  padding: 20px 10%;
 }
 
 @media screen and (max-width: 768px) {

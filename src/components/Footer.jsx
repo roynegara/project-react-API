@@ -11,6 +11,7 @@ const Footer = () => {
         <div className="footer-center">
           <p>Opening Hours:</p>
           <p>Monday - Friday: 8:00AM - 5:00PM</p>
+
           <p>Saturday - Sunday: Closed</p>
         </div>
         <div className="footer-right">
@@ -33,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 | Project RBN. Company </p> <p>All Rights Reserved</p>
+        <p>|| &copy; 2024 || Project RBN. Company Pte. Ltd. || All Rights Reserved ||</p>
       </div>
     </footer>
   );
