@@ -2,6 +2,7 @@ import axios from "axios";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./User.css";
 
 const User = () => {
   const [users, setUsers] = useState([]);
@@ -39,7 +40,7 @@ const User = () => {
   return (
     <Layout>
       {" "}
-      <div>
+      <div className="user">
         <h1>User</h1>
         <div>
           {users.map((item, index) => (
