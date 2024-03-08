@@ -63,11 +63,7 @@
   margin-right: auto;
 }
 
-.btn-user-detail{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 
 .btn-user-detail button, .btn-user-detail-link a {
     text-decoration: none;
@@ -79,9 +75,15 @@
     font-weight: 500;
     padding: 4px;
     margin: 10px;
-    width: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 420px;
     height: 40px;
 }
+
+
+
 
 .btn-user-detail button:hover, .btn-user-detail-link a:hover {
     background: #d4d4d4;
