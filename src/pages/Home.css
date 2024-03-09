@@ -3,8 +3,10 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("https://img.freepik.com/free-photo/sunny-tropical-landscape_23-2150466874.jpg?t=st=1709868528~exp=1709872128~hmac=7d877674fb0e0d558b402bd20b539efdbadbc9909331d424b0f5574693272d75&w=1380")
+  background: url("https://img.freepik.com/free-photo/mesmerizing-green-forest-full-different-kinds-unique-plants-yakushima-japan_181624-36812.jpg?t=st=1709945766~exp=1709949366~hmac=66c4f9a8be4f9976e111b33d8085882ac64096877ef13875986dac1d50aa521d&w=1380")
     no-repeat;
+  /* background: url("https://img.freepik.com/free-photo/sunny-tropical-landscape_23-2150466874.jpg?t=st=1709868528~exp=1709872128~hmac=7d877674fb0e0d558b402bd20b539efdbadbc9909331d424b0f5574693272d75&w=1380")
+    no-repeat; */
   background-size: cover;
   background-position: center;
   padding: 20px 10%;
@@ -47,14 +49,15 @@
   text-align: center;
 }
 
-.home-btn, .home-btn a {
+.home-btn,
+.home-btn a {
   text-decoration: none;
   color: #333;
   background: #ededed;
   border: none;
   border-radius: 4px;
   font-size: 18px;
-  font-weight: 500; 
+  font-weight: 500;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -64,9 +67,8 @@
   height: 50px;
 }
 
-.home-btn:hover, .home-btn a:hover {
+.home-btn:hover,
+.home-btn a:hover {
   background: #d4d4d4;
   color: #252525;
-  
-  
 }
