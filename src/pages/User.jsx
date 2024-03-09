@@ -68,7 +68,7 @@ const User = () => {
     <Layout>
       {" "}
       <div className="user">
-        <h1>The Member User of This Website</h1>
+        <h1 className="user-title">The Member User of This Website</h1>
         <div>
           {users.map((item, index) => (
             <div key={index}>
