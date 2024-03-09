@@ -19,17 +19,17 @@ const Home = () => {
         <h1 className="home-title">Welcome to Project RBN. Website</h1>
         <div className="home-content">
           <p className="home-description-1">
-            Perusahaan kami menawarkan layanan konsultasi yang unggul dengan tim ahli yang berpengalaman dalam Project
-            RBN. Dengan pendekatan profesional dan solusi yang inovatif, kami siap membantu pelanggan mencapai tujuan
-            mereka. Bergabunglah dengan kami untuk memperoleh hasil yang optimal dalam bisnis Anda
+            Our company offers excellent consulting services with an experienced team of experts in Project RBN. With a
+            professional approach and innovative solutions. We are ready to assist customers in achieving their goals.
+            Join us to obtain optimal results for your business.
           </p>
           <div className="home-description-2">
             {" "}
-            <p>If you interesting join please Register here</p>
+            <p>If you are interested in joining, please register here.</p>
             <button className="home-btn">
               <Link to="/register">Register</Link>
             </button>
-            <p>and if you already registered just login here</p>
+            <p>And if you have already registered, please log in here.</p>
             {token ? (
               <button className="home-btn" onClick={handleLogout}>
                 Logout

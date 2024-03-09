@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <div className="footer-left">
-          <a href="/"><img src="../src/assets/img/logo5.png" alt="Project RBN Logo" /></a>
+          <a href="/"><img src="../src/assets/img/Logo/logo5.png" alt="Project RBN Logo" /></a>
           
           {/* <p>Project RBN. Company Pte. Ltd</p> */}
         </div>
