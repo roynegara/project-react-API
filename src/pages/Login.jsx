@@ -43,7 +43,7 @@ const Login = () => {
         if (token) {
           setTimeout(() => {
             navigate("/user");
-          }, 1000);
+          }, 1500);
         }
       })
       .catch((err) => {
