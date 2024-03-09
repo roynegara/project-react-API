@@ -29,7 +29,7 @@
 
 .user-detail-card {
   margin-top: 80px;
-  width: 420px;
+  width: 450px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(2px);
@@ -78,7 +78,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 420px;
+    width: 450px;
     height: 40px;
 }
 
