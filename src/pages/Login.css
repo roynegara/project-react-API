@@ -1,3 +1,7 @@
+.notif {
+text-align: center;  
+}
+
 .login-wrap {
   display: flex;
   justify-content: center;
