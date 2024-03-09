@@ -1,4 +1,4 @@
-import Home from "../pages/Home";
+import Index from "../pages/Home/Index";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import User from "../pages/User";
@@ -8,7 +8,7 @@ import ProtectedRoute from "./ProtectedRoute";
 export const routeList = [
   {
     path: "/",
-    element: <Home />,
+    element: <Index />,
   },
   {
     path: "/user",

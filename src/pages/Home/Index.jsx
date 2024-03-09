@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import "./Home.css";
 import { Link, useNavigate } from "react-router-dom";
 

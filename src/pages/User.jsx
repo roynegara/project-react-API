@@ -17,6 +17,7 @@ const User = () => {
 
   const getUsersData = () => {
     axios
+      // pindah ke API
       .get(`https://reqres.in/api/users?page=${pagination.page}`)
       .then((res) => {
         console.log(res);
@@ -70,27 +71,29 @@ const User = () => {
       <div className="user">
         <h1 className="user-title">The Member User of This Website</h1>
         <div>
-          {users.map((item, index) => (
-            <div key={index}>
-              <div className="user-card">
-                <h1>
-                  {item.first_name} {item.last_name}
-                </h1>
-                <img className="avatar-user" src={item.avatar} />
-              </div>
+          <div className="user-content">
+            {users.map((item, index) => (
+              <div key={index}>
+                <div className="user-card">
+                  <h1>
+                    {item.first_name} {item.last_name}
+                  </h1>
+                  <img className="avatar-user" src={item.avatar} />
+                </div>
 
-              <div className="btn-detail">
-                <Link to={`/user/${item.id}`}>
-                  <button>Detail</button>
-                </Link>
+                <div className="btn-detail">
+                  <Link to={`/user/${item.id}`}>
+                    <button>Detail</button>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <div className="btn-pagination">
             <button onClick={handleBack} disabled={pagination.page === 1}>
               Back
             </button>
-            <button > {pagination.page}</button>
+            <button> {pagination.page}</button>
 
             <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>
               Next

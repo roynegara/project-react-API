@@ -5,6 +5,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,6 +34,7 @@ const Login = () => {
     setLoading(true);
 
     axios
+      // pindah ke API
       .post("https://reqres.in/api/login", payload)
       .then((res) => {
         console.log(res);
