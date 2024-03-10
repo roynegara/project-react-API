@@ -6,11 +6,14 @@ const Home = () => {
   return (
     <Layout>
       <div className="home">
-        <p className="home-title">Project RBN. Website</p>        
-          <h1 className="home-description-1">Excellent consulting services with an experienced team of experts.</h1>
-          <button className="home-btn">
+        <div className="home-content">
+           <p >Project RBN. Website</p>        
+          <h1 >Excellent consulting services with an experienced team of experts.</h1>
+          <button >
             <Link to="/register">Join Us</Link>
-          </button>        
+          </button>    
+        </div>
+           
       </div>
     </Layout>
   );
