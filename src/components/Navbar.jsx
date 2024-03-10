@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import LogInOut from "./LogInOut/LogInOut";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -22,8 +23,9 @@ const Navbar = () => {
           Home
         </Link>
         <Link to="/user">User</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
+        {/* <Link to="/login">Login</Link>
+        <Link to="/register">Register</Link> */}
+<LogInOut/>
       </div>
       <button className="navbar-toggle" onClick={toggleMenu}>
         <span className="toggle-icon">&#9776;</span>

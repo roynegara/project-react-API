@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
-import "./Home.css";
 import { Link, useNavigate } from "react-router-dom";
+import LogInOut from "../../components/LogInOut/LogInOut";
+import "./index.css";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -30,15 +31,9 @@ const Home = () => {
               <Link to="/register">Register</Link>
             </button>
             <p>And if you have already registered, please log in here.</p>
-            {token ? (
-              <button className="home-btn" onClick={handleLogout}>
-                Logout
-              </button>
-            ) : (
-              <button className="home-btn">
-                <Link to="/login">Login</Link>
-              </button>
-            )}
+            <div className="home-btn-loginout">
+              <LogInOut />
+            </div>
           </div>
         </div>
       </div>

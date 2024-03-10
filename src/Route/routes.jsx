@@ -4,6 +4,7 @@ import Register from "../pages/Register";
 import User from "../pages/User";
 import UserDetail from "../pages/UserDetail";
 import ProtectedRoute from "./ProtectedRoute";
+import LogInOut from "../components/LogInOut/LogInOut";
 
 export const routeList = [
   {
@@ -27,7 +28,7 @@ export const routeList = [
     ),
   },
   {
-    path: "/user/id/edit",
+    element: <LogInOut />,
   },
   {
     path: "/login",
