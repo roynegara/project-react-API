@@ -1,5 +1,5 @@
-.loginout, .loginout a {
+.loginout,
+.loginout a {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none;  
 }
-
