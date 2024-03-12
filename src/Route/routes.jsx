@@ -4,10 +4,7 @@ import Register from "../pages/Register/Register";
 import User from "../pages/User/User";
 import UserDetail from "../pages/User/UserDetail";
 import ProtectedRoute from "./ProtectedRoute";
-import { ProtectedLogin } from "./ProtectedLogin";
-
-
-
+import ProtectedLogin from "./ProtectedLogin";
 
 export const routeList = [
   {
@@ -30,11 +27,15 @@ export const routeList = [
       </ProtectedRoute>
     ),
   },
-  
   {
     path: "/login",
-    element: ProtectedLogin() ||  <Login />,
+    element: (
+      <ProtectedLogin>
+        <Login />
+      </ProtectedLogin>
+    ),
   },
+
   {
     path: "/register",
     element: <Register />,

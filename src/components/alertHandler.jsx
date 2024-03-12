@@ -1,6 +1,6 @@
 const alertHandler = {
     alertProtectedLogin: () => {
-        return "You are already logged in. Please logout first.";
+        return "You are already Login. Please Logout first.";
     }
 };
 
