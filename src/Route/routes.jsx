@@ -1,10 +1,13 @@
-import Index from "../pages/Home/Index";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import User from "../pages/User";
-import UserDetail from "../pages/UserDetail";
+import Index from "../pages/Index/Index";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+import User from "../pages/User/User";
+import UserDetail from "../pages/User/UserDetail";
 import ProtectedRoute from "./ProtectedRoute";
-import LogInOut from "../components/LogInOut/LogInOut";
+import { ProtectedLogin } from "./ProtectedLogin";
+
+
+
 
 export const routeList = [
   {
@@ -20,19 +23,17 @@ export const routeList = [
     ),
   },
   {
-    path: "/user/:id",    
+    path: "/user/:id",
     element: (
       <ProtectedRoute>
         <UserDetail />
       </ProtectedRoute>
     ),
   },
-  {
-    element: <LogInOut />,
-  },
+  
   {
     path: "/login",
-    element: <Login />,
+    element: ProtectedLogin() ||  <Login />,
   },
   {
     path: "/register",

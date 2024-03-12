@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./register.css";
 
-import "./Register.css";
+
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

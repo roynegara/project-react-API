@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Layout from "../components/Layout";
-import "./UserDetail.css";
+import Layout from "../../components/Layout/Layout";
+import "./userDetail.css";
 
 const UserDetail = () => {
   const [user, setUser] = useState([]);
@@ -40,9 +40,7 @@ const UserDetail = () => {
 
           <div className="btn-user-detail">
             <button className="btn-user-detail-link">
-           
-                <Link to="/user">Back</Link>
-             
+              <Link to="/user">Back</Link>
             </button>
             {/* <button>
               <Link to={`/user/${id}/edit`}>Edit</Link>

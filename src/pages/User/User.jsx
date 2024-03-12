@@ -1,8 +1,8 @@
 import axios from "axios";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "./User.css";
+import "./user.css";
 
 const User = () => {
   const [users, setUsers] = useState([]);
