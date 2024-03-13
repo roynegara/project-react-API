@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./register.css";
+import API_URL from "../../Utils/API_LIST";
 
 
 const Register = () => {
@@ -34,7 +35,7 @@ const Register = () => {
     setLoading(true);
 
     axios
-      .post("https://reqres.in/api/register", payload)
+      .post(API_URL.REGISTER, payload)
       .then((res) => {
         console.log(res);
         setNotif("Status : " + res?.status + " >> Register Successfully, Please Login");

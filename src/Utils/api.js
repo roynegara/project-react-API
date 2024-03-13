@@ -1,7 +1,11 @@
 import axios from "axios";
+import 
 
-export const handleLogin = async (API, payload) =>  {
-    const res = await axios.post(API, payload)
-    return res
-} 
-
+export const handleLogin = async (API, payload) => {
+    try {
+        const res = await axios.post(API, payload);
+        return res.data;
+    } catch (error) {
+        throw new Error(error.message);
+    }
+};

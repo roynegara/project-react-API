@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./user.css";
+import API_URL from "../../Utils/API_LIST";
 
 const User = () => {
   const [users, setUsers] = useState([]);
@@ -18,7 +19,7 @@ const User = () => {
   const getUsersData = () => {
     axios
       // pindah ke API
-      .get(`https://reqres.in/api/users?page=${pagination.page}`)
+      .get(API_URL.USER + `?page=${pagination.page}`)
       .then((res) => {
         console.log(res);
         setUsers(res.data.data);

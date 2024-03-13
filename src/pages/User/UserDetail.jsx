@@ -3,13 +3,14 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./userDetail.css";
+import API_URL from "../../Utils/API_LIST";
 
 const UserDetail = () => {
   const [user, setUser] = useState([]);
 
   const getUserData = () => {
     axios
-      .get(`https://reqres.in/api/users/${id}`)
+      .get(API_URL.USER + `/${id}`)
       .then((res) => {
         console.log(res);
         setUser(res?.data?.data);

@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import "./index.css";
-import alertHandler from "../../components/alertHandler";
+import NotifHandlerWarning from "../../components/Notifications/NotifHandlerWarning";
 
 const Home = () => {
   return (
@@ -9,15 +9,14 @@ const Home = () => {
       <div className="home">
         <div className="home-content">
           <p>Project RBN. Website</p>
-          <button
-            onClick={() => {
-              alertHandler.alertProtectedLogin();
-            }}>
-            Alert
-          </button>
-          <button>
-            <Link to="/login">Login</Link>
-          </button>
+
+          <NotifHandlerWarning />
+
+         
+
+
+          
+         
 
           <h1>Excellent consulting services with an experienced team of experts.</h1>
           <button>

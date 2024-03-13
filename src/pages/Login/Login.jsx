@@ -4,6 +4,8 @@ import "./login.css";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_URL from "../../Utils/API_LIST";
+
 
 
 const Login = () => {
@@ -23,6 +25,7 @@ const Login = () => {
     console.log(e.target.value);
   };
 
+  
   const handleLogin = () => {
     const payload = {
       email: email,
@@ -35,7 +38,7 @@ const Login = () => {
 
     axios
       // pindah ke API
-      .post("https://reqres.in/api/login", payload)
+      .post(API_URL.LOGIN, payload)
       .then((res) => {
         console.log(res);
         setNotif("Status : " + res?.status + " >> Login Successfully, Please Wait...");
