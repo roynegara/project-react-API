@@ -38,6 +38,10 @@ export const routeList = [
 
   {
     path: "/register",
-    element: <Register />,
+    element: (
+      <ProtectedLogin>
+        <Register />
+      </ProtectedLogin>
+    ),
   },
 ];

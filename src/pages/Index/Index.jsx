@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import "./index.css";
-import NotifHandlerWarning from "../../components/Notifications/NotifHandlerWarning";
+
 
 const Home = () => {
   return (
@@ -10,13 +10,8 @@ const Home = () => {
         <div className="home-content">
           <p>Project RBN. Website</p>
 
-          <NotifHandlerWarning />
-
          
-
-
-          
-         
+          <Link to="/login">Login</Link>
 
           <h1>Excellent consulting services with an experienced team of experts.</h1>
           <button>

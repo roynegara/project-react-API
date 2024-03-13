@@ -54,7 +54,7 @@ function NotifHandlerWarning() {
       <button
         href="/login"
         onClick={() =>
-          createToast("warning", "fa-solid fa-triangle-exclamation", "Warning", "This is a warning toast.")
+          createToast("warning", "fa-solid fa-triangle-exclamation", "Warning!!!", "You are Already Login")
         }>
         Warning
       </button>

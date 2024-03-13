@@ -56,36 +56,41 @@ const Register = () => {
       });
   };
 
-  return (
-    <Layout>
-      <div className="register-wrap">
-        <div className="register">
-          <h1> Register</h1>
-          {notif && <div className="notif">{notif}</div>}
-          <div className="input-box-reg">
-            <input type="email" id="email" placeholder="Email" value={email} onChange={handleEmailReg} />
-            <i className="bx bx-envelope"></i>
-          </div>
-          <div className="input-box-reg">
-            <input type="password" id="password" placeholder="Password" onChange={handlePasswordReg} />
-            <i className="bx bxs-lock-open"></i>
-          </div>
+ 
 
-          <div className="btn-reg">
-            <button
-              type="submit"
-              onClick={handleReg}
-              disabled={loading ? true : false}>              
-              {loading ? "Loading..." : "Register"}
-            </button>
-            <p>
-              Already have an account? <Link to={"/login"}>Login</Link>
-            </p>
+  
+
+
+    return (
+      <Layout>
+        <div className="register-wrap">
+          <div className="register">
+            <h1> Register</h1>
+            {notif && <div className="notif">{notif}</div>}
+            
+
+            <div className="input-box-reg">
+              <input type="email" id="email" placeholder="Email" value={email} onChange={handleEmailReg} />
+              <i className="bx bx-envelope"></i>
+            </div>
+            <div className="input-box-reg">
+              <input type="password" id="password" placeholder="Password" onChange={handlePasswordReg} />
+              <i className="bx bxs-lock-open"></i>
+            </div>
+
+            <div className="btn-reg">
+              <button type="submit" onClick={handleReg} disabled={loading ? true : false}>
+                {loading ? "Loading..." : "Register"}
+              </button>
+              <p>
+                Already have an account? <Link to={"/login"}>Login</Link>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
-  );
-};
+      </Layout>
+    );
+  };
+
 
 export default Register;
