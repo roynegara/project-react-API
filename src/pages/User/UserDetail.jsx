@@ -39,14 +39,14 @@ const UserDetail = () => {
             <img className="avatar-user-detail" alt={user?.first_name} src={user?.avatar} />
           </div>
 
-          <div className="btn-user-detail">
-            <button className="btn-user-detail-link">
-              <Link to="/user">Back</Link>
-            </button>
-            {/* <button>
+          
+          <Link className="btn-userdetail" to="/user">
+            Back
+          </Link>
+
+          {/* <button>
               <Link to={`/user/${id}/edit`}>Edit</Link>
             </button> */}
-          </div>
         </div>
       </div>
     </Layout>

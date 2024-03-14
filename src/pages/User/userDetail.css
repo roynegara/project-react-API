@@ -79,8 +79,8 @@
   }
 } */
 
-.btn-user-detail button,
-.btn-user-detail-link a {
+.btn-userdetail {
+display: inline-block;
   text-decoration: none;
   color: #333;
   background: #ededed;
@@ -90,15 +90,18 @@
   font-weight: 500;
   padding: 4px;
   margin: 10px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   width: 450px;
   height: 40px;
+  
 }
 
-.btn-user-detail button:hover,
-.btn-user-detail-link a:hover {
+.btn-userdetail:hover {
   background: #d4d4d4;
   color: #252525;
 }
+
+/* .btn-user-detail button:hover,
+.btn-user-detail-link a:hover {
+  background: #d4d4d4;
+  color: #252525;
+} */
