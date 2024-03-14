@@ -2,21 +2,30 @@ import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-
 const Home = () => {
   return (
     <Layout>
       <div className="home">
-        <div className="home-content">
-          <p>Project RBN. Website</p>
+        <div className="home-part">
+          <div className="home-content">
+            <h1>Excellent consulting services with an experienced team of experts.</h1>
+            <h3>Project RBN. Website</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil sequi deserunt dicta nesciunt
+              reprehenderit ullam repudiandae fugiat modi numquam pariatur. Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Nihil sequi deserunt dicta nesciunt reprehenderit ullam.
+            </p>
 
-         
-          <Link to="/login">Login</Link>
+            <Link className="btn-home" to="/register">
+              Join Us
+            </Link>
 
-          <h1>Excellent consulting services with an experienced team of experts.</h1>
-          <button>
-            <Link to="/register">Join Us</Link>
-          </button>
+            <Link to="/login">Login</Link>
+          </div>
+
+          <div className="img-home">
+            <img src="src/assets/img/Index/Index.png" alt="Index Image" />
+          </div>
         </div>
       </div>
     </Layout>
