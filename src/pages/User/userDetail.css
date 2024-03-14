@@ -79,8 +79,8 @@
   }
 } */
 
-.btn-userdetail {
-display: inline-block;
+.btn-userdetail-back {
+  display: inline-block;
   text-decoration: none;
   color: #333;
   background: #ededed;
@@ -90,14 +90,33 @@ display: inline-block;
   font-weight: 500;
   padding: 4px;
   margin: 10px;
-  width: 450px;
+  width: 215px;
   height: 40px;
-  
 }
 
-.btn-userdetail:hover {
-  background: #d4d4d4;
-  color: #252525;
+.btn-userdetail-edit {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  background: #ededed;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px;
+  margin: 10px;
+  width: 215px;
+  height: 40px;
+}
+
+.btn-userdetail-back:hover {
+  background: green;
+  color: #d4d4d4;
+}
+
+.btn-userdetail-edit:hover {
+  background: red;
+  color: #d4d4d4;
 }
 
 /* .btn-user-detail button:hover,

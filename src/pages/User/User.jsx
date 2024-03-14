@@ -80,7 +80,7 @@ const User = () => {
             ))}
           </div>
           <div className="btn-pagination">
-            <button onClick={handleBack} disabled={pagination.page === 1}>
+            <button onClick={handleBack} disabled={pagination.page === 1} className={pagination.page === 1 ? "disabled" : ""}>
               Back
             </button>
             {Array.from({ length: pagination.total_pages }, (_, i) => i + 1).map((page) => (
@@ -92,7 +92,7 @@ const User = () => {
                 {page}
               </button>
             ))}
-            <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>
+            <button onClick={handleNext} disabled={pagination.page === pagination.total_pages} className={pagination.page === pagination.total_pages ? "disabled" : ""}>
               Next
             </button>
           </div>
