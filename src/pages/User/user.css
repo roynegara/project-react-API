@@ -125,3 +125,8 @@
   background: #d4d4d4;
   color: #252525;
 }
+
+.btn-pagination button.active {
+  background-color: grey;
+  color: white;
+}

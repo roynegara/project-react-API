@@ -94,7 +94,29 @@ const User = () => {
             <button onClick={handleBack} disabled={pagination.page === 1}>
               Back
             </button>
-            <button> {pagination.page}</button>
+
+            
+
+            {Array.from({ length: pagination.total_pages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePage(page)}
+                className={pagination.page === page ? "active" : ""}
+                disabled={pagination.page === page}
+              >
+                {page}
+              </button>
+            ))}
+
+
+
+            {/* {Array.from({ length: pagination.total_pages }, (_, i) => i + 1).map((page) => (
+              <button key={page} onClick={() => handlePage(page)} disabled={pagination.page === page}>
+                {page}
+              </button>
+            ))} */}
+
+            {/* <button> {pagination.page}</button> */}
 
             <button onClick={handleNext} disabled={pagination.page === pagination.total_pages}>
               Next
