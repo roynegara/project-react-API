@@ -15,8 +15,8 @@
 
 // **tgl 13/12/2022 jam 10.47 **
 import { Navigate, Outlet } from "react-router-dom";
-// import alertHandler from "../components/alertHandler";
-import AlertLogin from "../components/Alert/AlertLogin";
+
+import alertHandler from "../components/Alert/alertHandler";
 
 const ProtectedLogin = ({ children }) => {
   const token = localStorage.getItem("access_token");
@@ -24,7 +24,8 @@ const ProtectedLogin = ({ children }) => {
   // console.log("url_link", url);
 
   if (token) {
-    <AlertLogin/>;
+    alert(alertHandler.alertProtectedLogin());
+
     return <Navigate to="/" />;
   } else {
     return children || <Outlet />;

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./notif.css"; // import your CSS file
+import { Link } from "react-router-dom";
+import alertHandler from "../Alert/alertHandler";
 
 function Toast({ type, icon, title, text, removeToast }) {
   // State to manage timeout for auto-dismissal
@@ -30,7 +32,7 @@ function Toast({ type, icon, title, text, removeToast }) {
   );
 }
 
-function NotifHandlerWarning() {
+function Notif() {
   // State to manage toast notifications
   const [toasts, setToasts] = useState([]);
 
@@ -51,15 +53,16 @@ function NotifHandlerWarning() {
         />
       ))}
 
-      <button
-        href="/login"
+      <Link
+        className="btn-home"
+        to="/register"
         onClick={() =>
-          createToast("warning", "fa-solid fa-triangle-exclamation", "Warning!!!", "You are Already Login")
+          createToast("warning", "fa-solid fa-triangle-exclamation", "Warning!!!", alertHandler.alertProtectedLogin())
         }>
         Warning
-      </button>
+      </Link>
     </div>
   );
 }
 
-export default NotifHandlerWarning;
+export default Notif;

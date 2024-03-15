@@ -137,5 +137,5 @@
 .btn-pagination button.disabled {
   color: #333;
   background: grey;
-
+  cursor: not-allowed;
 }
