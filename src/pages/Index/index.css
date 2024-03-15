@@ -25,7 +25,7 @@
 
 .home-content {
   flex: 1;
-  padding: 80px;
+  padding: 80px 50px 80px 40px;
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
   backdrop-filter: blur(3px);
 
@@ -45,9 +45,9 @@
   position: relative;
   font-size: 30px;
   font-weight: 700;
-   /* color: #02cf02; */
-   color: greenyellow;
-  
+  /* color: #02cf02; */
+  color: greenyellow;
+
   /* color: #78b139; */
 }
 
@@ -121,7 +121,7 @@
 }
 
 .img-home img {
-  max-width: 67%;
+  max-width: 65%;
 }
 
 /* 

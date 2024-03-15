@@ -3,9 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-
 const Home = () => {
-
   return (
     <Layout>
       <div className="home">
@@ -14,15 +12,14 @@ const Home = () => {
             <h1>Excellent consulting services with an experienced team of experts.</h1>
             <h3>Project RBN. Website</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil sequi deserunt dicta nesciunt
-              reprehenderit ullam repudiandae fugiat modi numquam pariatur. Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Nihil sequi deserunt dicta nesciunt reprehenderit ullam.
+              Kami menawarkan layanan konsultasi yang unggul dengan tim ahli berpengalaman untuk membantu Anda mencapai
+              tujuan bisnis Anda. Dengan pendekatan yang terarah dan solusi yang inovatif, kami memastikan kesuksesan
+              proyek Anda. Kami berkomitmen untuk memberikan solusi terbaik untuk memenuhi kebutuhan Anda.
             </p>
 
             <Link className="btn-home" to="/register">
               Join Us
             </Link>
-            
           </div>
 
           <div className="img-home">
