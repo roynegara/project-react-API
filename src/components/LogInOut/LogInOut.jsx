@@ -10,8 +10,9 @@ const LogInOut = () => {
     localStorage.removeItem("access_token");
     navigate("/login");
   };
-
-  return <div className="loginout">{token ? <a onClick={handleLogout}> Logout </a> : <Link to="/login"> Login </Link>}</div>;
+  return (
+    <div className="loginout">{token ? <a onClick={handleLogout}> Logout </a> : <Link to="/login"> Login </Link>}</div>
+  );
 };
 
 export default LogInOut;

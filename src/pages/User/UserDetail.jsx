@@ -1,13 +1,12 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 import Layout from "../../components/Layout/Layout";
-import "./userDetail.css";
 import API_URL from "../../Utils/API_LIST";
+import "./userDetail.css";
 
 const UserDetail = () => {
   const [user, setUser] = useState([]);
- 
 
   const getUserData = () => {
     axios
@@ -28,7 +27,6 @@ const UserDetail = () => {
   const { id } = useParams();
   console.log(id);
 
-  
   return (
     <Layout>
       <div className="user-detail">
@@ -40,11 +38,9 @@ const UserDetail = () => {
             <h2>Email Address : {user?.email}</h2>
             <img className="avatar-user-detail" alt={user?.first_name} src={user?.avatar} />
           </div>
-
           <Link className="btn-userdetail-back" to="/user">
             Back
           </Link>
-
           <Link className="btn-userdetail-edit" to={`/user/${id}/edit`}>
             Edit
           </Link>

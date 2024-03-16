@@ -5,14 +5,13 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <div className="footer-left">
-          <a href="/"><img src="../src/assets/img/Logo/logo5.png" alt="Project RBN Logo" /></a>
-          
-          {/* <p>Project RBN. Company Pte. Ltd</p> */}
+          <a href="/">
+            <img src="../src/assets/img/Logo/logo5.png" alt="Project RBN Logo" />
+          </a>
         </div>
         <div className="footer-center">
           <p>Opening Hours :</p>
           <p>Monday - Friday : 8.00AM - 5.00PM</p>
-
           <p>Saturday and Sunday : Closed</p>
         </div>
         <div className="footer-right">

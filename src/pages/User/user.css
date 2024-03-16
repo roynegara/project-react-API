@@ -1,5 +1,4 @@
 .user {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -40,8 +39,6 @@
 }
 
 .user-card h1 {
-  /* margin-top: 20px; */
-  /* margin: 20px; */
   font-size: 21px;
 }
 
@@ -67,18 +64,8 @@
 
 .avatar-user:hover {
   transform: scale(1.03);
-  /* animation: smoothScale 0.7s cubic-bezier(0.25, 0.1, 0.25, 1); */
   cursor: pointer;
 }
-
-/* @keyframes smoothScale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-} */
 
 .btn-detail {
   align-items: center;

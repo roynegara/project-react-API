@@ -5,8 +5,6 @@
   min-height: 100vh;
   background: url("https://img.freepik.com/free-photo/mesmerizing-green-forest-full-different-kinds-unique-plants-yakushima-japan_181624-36812.jpg?t=st=1709945766~exp=1709949366~hmac=66c4f9a8be4f9976e111b33d8085882ac64096877ef13875986dac1d50aa521d&w=1380")
     no-repeat;
-  /* background: url("https://img.freepik.com/free-photo/sunny-tropical-landscape_23-2150466874.jpg?t=st=1709868528~exp=1709872128~hmac=7d877674fb0e0d558b402bd20b539efdbadbc9909331d424b0f5574693272d75&w=1380")
-    no-repeat; */
   background-size: cover;
   background-position: center;
   padding: 20px 10%;
@@ -17,18 +15,12 @@
   align-items: center;
   height: 700px;
   width: 100%;
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
-  /* backdrop-filter: blur(20px); */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2); */
-  /* border-radius: 9px; */
 }
 
 .home-content {
   flex: 1;
   padding: 80px 50px 80px 40px;
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
   backdrop-filter: blur(3px);
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
   border-radius: 60px;
 }
@@ -45,10 +37,7 @@
   position: relative;
   font-size: 30px;
   font-weight: 700;
-  /* color: #02cf02; */
   color: greenyellow;
-
-  /* color: #78b139; */
 }
 
 .home-content p {
@@ -65,14 +54,11 @@
   align-items: center;
   width: 150px;
   height: 100%;
-  /* background: #00abf0; */
-  /* backdrop-filter: blur(2px); */
   background: #ededed;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   font-size: 19px;
-  /* color: #ededed; */
   color: #333;
   text-decoration: none;
   font-weight: 600;
@@ -88,8 +74,6 @@
   backdrop-filter: blur(2px);
   background: transparent;
   color: #ededed;
-  /* color: #333; */
-  /* color: #ededed; */
 }
 
 .btn-home::before {
@@ -99,7 +83,6 @@
   left: 0;
   width: 0;
   height: 100%;
-  /* background: red; */
   background: green;
 
   z-index: -1;
@@ -115,19 +98,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid rgba(255, 255, 255, 0.2); */
-  /* backdrop-filter: blur(2px); */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2); */
 }
 
 .img-home img {
   max-width: 65%;
 }
 
-
-
 @media screen and (max-width: 1300px) {
- 
   .home-part {
     display: block;
     justify-content: center;
@@ -138,11 +115,10 @@
   .img-home img {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 685px) {
-  .home-content h1  {
+  .home-content h1 {
     font-size: 45px;
   }
   .home-content h3 {
@@ -154,7 +130,7 @@
 }
 
 @media screen and (max-width: 580px) {
-  .home-content h1  {
+  .home-content h1 {
     font-size: 40px;
   }
   .home-content h3 {
@@ -166,7 +142,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .home-content h1  {
+  .home-content h1 {
     font-size: 35px;
   }
   .home-content h3 {

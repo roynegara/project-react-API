@@ -49,17 +49,11 @@ const Register = () => {
         }
       })
       .catch((err) => {
-        // alert("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
         setLoading(false);
         console.log(err.response);
         setNotif("Warning !!! " + err?.response?.data?.error + ", Please Check Again Your Email or Password");
       });
   };
-
- 
-
-  
-
 
     return (
       <Layout>
@@ -67,8 +61,6 @@ const Register = () => {
           <div className="register">
             <h1> Register</h1>
             {notif && <div className="notif">{notif}</div>}
-            
-
             <div className="input-box-reg">
               <input type="email" id="email" placeholder="Email" value={email} onChange={handleEmailReg} />
               <i className="bx bx-envelope"></i>
@@ -77,7 +69,6 @@ const Register = () => {
               <input type="password" id="password" placeholder="Password" onChange={handlePasswordReg} />
               <i className="bx bxs-lock-open"></i>
             </div>
-
             <div className="btn-reg">
               <button type="submit" onClick={handleReg} disabled={loading ? true : false}>
                 {loading ? "Loading..." : "Register"}

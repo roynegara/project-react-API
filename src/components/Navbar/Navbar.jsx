@@ -16,14 +16,11 @@ const Navbar = () => {
       <div className="logo">
         <Link to="/">Project RBN.</Link>
       </div>
-
       <div className={`navbar-nav ${isOpen ? "active" : ""}`}>
         <Link active to="/">
           Home
         </Link>
-        <Link to="/user">User</Link>
-        {/* <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link> */}
+        <Link to="/user">User</Link>      
         <LogInOut />
       </div>
       <button className="navbar-toggle" onClick={toggleMenu}>
