@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
+import AlertLogin from "../../components/Alert/AlertLogin";
 import "./index.css";
 
 const Home = () => {
+
+ 
+
+
   return (
     <Layout>
       <div className="home">
@@ -17,7 +22,7 @@ const Home = () => {
               proyek Anda. Kami berkomitmen untuk memberikan solusi terbaik untuk memenuhi kebutuhan Anda.
             </p>
 
-            <Link className="btn-home" to="/register">
+            <Link className="btn-home" to="/register" onClick={()=> AlertLogin()? "/register" : ""}>
               Join Us
             </Link>
           </div>
