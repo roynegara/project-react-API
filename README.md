@@ -9,11 +9,12 @@ Currently, two official plugins are available:
 
 
 In development process, I used:
-.Node js version 18.17.1
-.NPM version 9.6.7
-.For dependencies, I used:
- 1. axios: version 1.6.7
- 2. react: version 18.2.0
- 3. react-dom: version 18.2.0
- 4. react-router-dom: version 6.22.2
+1. Node js version 18.17.1
+2. NPM version 9.6.7
+   
+For dependencies, I used:
+1. axios: version 1.6.7
+2. react: version 18.2.0
+3. react-dom: version 18.2.0
+4. react-router-dom: version 6.22.2
    
