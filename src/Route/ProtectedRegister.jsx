@@ -23,7 +23,7 @@ const ProtectedLogin = ({ children }) => {
   // const url = window.location.pathname;
   // console.log("url_link", url);
 
-  if (!token) {
+  if (token) {
     // alert(alertHandler.alertProtectedLogin());
 
     return <Navigate to="/login" />;

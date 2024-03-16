@@ -40,9 +40,9 @@ export const routeList = [
   {
     path: "/register",
     element: (
-      <ProtectedLogin>
+      <ProtectedRegister>
         <Register />
-      </ProtectedLogin>
+      </ProtectedRegister>
     ),
   },
 ];
