@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Project RBN.</Link>
+        <Link  to="/">Project RBN.</Link>
       </div>
       <div className={`navbar-nav ${isOpen ? "active" : ""}`}>
         <Link active to="/">

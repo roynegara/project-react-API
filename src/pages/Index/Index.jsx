@@ -1,9 +1,10 @@
-import Layout from "../../components/Layout/Layout";
 import { Link } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 import AlertLogin from "../../components/Alert/AlertLogin";
 import "./index.css";
 
 const Home = () => {
+ 
   return (
     <Layout>
       <div className="home">

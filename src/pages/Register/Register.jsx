@@ -38,13 +38,13 @@ const Register = () => {
       .post(API_URL.REGISTER, payload)
       .then((res) => {
         console.log(res);
-        setNotif("Status : " + res?.status + " >> Register Successfully, Please Login");
+        setNotif("Status : " + res?.status + " >> Register Successfully, Please Wait ...");
         const token = res?.data?.token;
         localStorage.setItem("access_token", token);
         setLoading(false);
         if (token) {
           setTimeout(() => {
-            navigate("/login");
+            navigate("/");
           }, 1500);
         }
       })

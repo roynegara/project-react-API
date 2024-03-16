@@ -59,7 +59,7 @@ const User = () => {
 
   return (
     <Layout>
-      <div className="user">
+      <div className="user" >
         <h1 className="user-title">The Member User of This Website</h1>
         <div>
           <div className="user-content">
